@@ -133,14 +133,14 @@ vim_plugin_task "markdown_preview", "git://github.com/robgleeson/vim-markdown-pr
 vim_plugin_task "nerdtree",         "git://github.com/wycats/nerdtree.git"
 vim_plugin_task "nerdcommenter",    "git://github.com/ddollar/nerdcommenter.git"
 vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"
-vim_plugin_task "taglist",          "git://github.com/vim-scripts/taglist.vim.git"
+#vim_plugin_task "taglist",          "git://github.com/vim-scripts/taglist.vim.git"
 vim_plugin_task "vividchalk",       "git://github.com/tpope/vim-vividchalk.git"
 vim_plugin_task "supertab",         "git://github.com/ervandew/supertab.git"
 vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
 vim_plugin_task "textile",          "git://github.com/timcharper/textile.vim.git"
 vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
 vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
-vim_plugin_task "zoomwin",          "git://github.com/vim-scripts/ZoomWin.git"
+#vim_plugin_task "zoomwin",          "git://github.com/vim-scripts/ZoomWin.git"
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
@@ -153,17 +153,17 @@ vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "puppet",           "git://github.com/ajf/puppet-vim.git"
 vim_plugin_task "php-doc",          "git://github.com/justinrainbow/php-doc.vim.git"
 
-vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
-  sh "find ruby -name '.gitignore' | xargs rm"
-  Dir.chdir "ruby/command-t" do
-    if File.exists?("/usr/bin/ruby") # prefer system rubies
-      sh "/usr/bin/ruby extconf.rb"
-    elsif `rvm > /dev/null 2>&1` && $?.exitstatus == 0
-      sh "rvm system ruby extconf.rb"
-    end
-    sh "make clean && make"
-  end
-end
+#vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
+#  sh "find ruby -name '.gitignore' | xargs rm"
+#  Dir.chdir "ruby/command-t" do
+#    if File.exists?("/usr/bin/ruby") # prefer system rubies
+#      sh "/usr/bin/ruby extconf.rb"
+#    elsif `rvm > /dev/null 2>&1` && $?.exitstatus == 0
+#      sh "rvm system ruby extconf.rb"
+#    end
+#    sh "make clean && make"
+#  end
+#end
 
 vim_plugin_task "janus_themes" do
   # custom version of railscasts theme
