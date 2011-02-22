@@ -153,6 +153,7 @@ vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "puppet",           "git://github.com/ajf/puppet-vim.git"
 vim_plugin_task "php-doc",          "git://github.com/justinrainbow/php-doc.vim.git"
 vim_plugin_task "xdebug",           "git://github.com/justinrainbow/php-xdebug.vim.git"
+vim_plugin_task "symfony2",         "git://github.com/justinrainbow/symfony2.vim.git"
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
